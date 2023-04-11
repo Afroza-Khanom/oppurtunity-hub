@@ -1,9 +1,14 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from '../Header/Header';
+import { useLoaderData } from 'react-router-dom';
+
 import './Home.css'
+import JobCategory from '../JobCategory/JobCategory';
+
 
 const Home = () => {
+    const jobCategories = useLoaderData();
+    console.log(jobCategories)
+
     return (
         <div>
             <header className='header-container'>
@@ -18,6 +23,19 @@ const Home = () => {
                     <img className='img-fluid' src="/public/image/a49e18a6c059795a878b6b0366e7211b.png" alt="" />
                 </div>
             </header>
+
+            {/* section for job category */}
+            <section>
+                <h1 style={{fontSize:'38px'}}>Job Category List </h1>
+                <p>Explore thousands of opportunities with all the information you need.</p>
+                <div className='jobCategory-container'>
+                    {
+                        jobCategories.map(jobcategory => <JobCategory
+                        key={jobcategory.id} jobcategory={jobcategory}
+                        ></JobCategory>)
+                    }
+                </div>
+            </section>
             
         </div>
     );

@@ -29,7 +29,31 @@
 }
 
 .header-container img{
-    width: 516px;
-    height: 544px;
+    width: 526px;
+    height: 554px;
+}
+
+.jobCategory-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .header-container{
+        width: 300px;
+        height: auto;
+    }
+    .paragraph-container{
+        padding-inline-start: 0%;
+        left: 0;
+    }
+    .paragraph-container h1{
+        font-size:large;
+    }
+
+    .header-container img{
+        width: 250px;
+        height: 324px;
+    }
 }
  

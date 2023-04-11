@@ -1,4 +1,21 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav a{
     text-decoration: none;
     padding-right: 20px;
+}
+
+.btn-apply{
+    width: 150px;
+    height: 60px;
+    background-color: blueviolet;
+    color: white;
+    padding: 19px 20px 19px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
 }

@@ -9,6 +9,9 @@ const Home = () => {
     const jobCategories = useLoaderData();
     console.log(jobCategories)
 
+    const featuredJobs = useLoaderData();
+    console.log(featuredJobs)
+
     return (
         <div>
             <header className='header-container'>
@@ -25,7 +28,7 @@ const Home = () => {
             </header>
 
             {/* section for job category */}
-            <section>
+            <section style={{margin:'10px', paddingBottom:'20px'}}>
                 <h1 style={{fontSize:'38px'}}>Job Category List </h1>
                 <p>Explore thousands of opportunities with all the information you need.</p>
                 <div className='jobCategory-container'>
@@ -33,6 +36,17 @@ const Home = () => {
                         jobCategories.map(jobcategory => <JobCategory
                         key={jobcategory.id} jobcategory={jobcategory}
                         ></JobCategory>)
+                    }
+                </div>
+            </section>
+
+            {/* Section for featured jobs */}
+            <section style={{paddingTop: '20px'}}>
+            <h1 style={{fontSize:'38px'}}>Featured Jobs</h1>
+                <p>Explore thousands of opportunities with all the information you need.</p>
+                <div>
+                    {
+
                     }
                 </div>
             </section>

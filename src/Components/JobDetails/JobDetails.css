@@ -1,0 +1,12 @@
+header{
+    background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=740&t=st=1681294723~exp=1681295323~hmac=4a084af37b6bfa25a12ca8e22ed1ad5cd1231c1c44724727c62442f043e11e1f');
+    background-image: linear-gradient(to right, rgba(233, 167, 233, 0.829), rgb(238, 232, 232)
+    );
+    width: auto;
+    height: 220px;
+    border-radius: 10px;
+}
+
+header h1{
+    padding-top: 100px;
+}

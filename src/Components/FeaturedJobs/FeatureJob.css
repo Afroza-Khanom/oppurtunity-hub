@@ -30,9 +30,29 @@
     
 }
 
+.remote-container button{
+    border: 1px solid violet;
+    border-radius: 8px;
+    color: blueviolet;
+    padding: 12px;
+    margin: 5px;
+}
+
 .icon-dollar-salary{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.showMore-btn{
+    width: 120px;
+    height: 60px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 10px;
     
 }

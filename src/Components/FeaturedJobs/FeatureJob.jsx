@@ -5,7 +5,7 @@ import { faLocation, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import './FeatureJob.css'
 import JobDetail from '../JobDetail/JobDetail';
 
-export const JobDetailContext = createContext([]);
+// export const JobDetailContext = createContext([]);
 
 const FeatureJob = ({featuredjob}) => {
     const {_id, company_logo,company_name, location,job_title, remote, Salary } = featuredjob;

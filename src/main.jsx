@@ -12,6 +12,8 @@ import Main from './Components/Layout/Main';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
+import FeatureJob from './Components/FeaturedJobs/FeatureJob';
+import featuredJobsLoader from './loaders/FeaturedJobsCart';
 
 
 const router = createBrowserRouter([
@@ -23,11 +25,6 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>,
         loader: () => fetch('jobCategories.json')
-      },
-      {
-        path:'/',
-        element: <Home></Home>,
-        loader: () => fetch('featuredJobs.json')
       },
       {
         path:'appliedjob',

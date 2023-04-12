@@ -59,4 +59,23 @@
         display: block;
     }
 }
+
+
+.featuredJob-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    Width: 648px;
+    Height: 300px;
+    padding:0 150px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .featuredJob-container{
+        display: inline;
+        width: auto;
+    }
+}
  

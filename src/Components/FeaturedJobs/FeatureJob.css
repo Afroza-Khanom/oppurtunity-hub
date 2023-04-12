@@ -1,0 +1,38 @@
+.featureJob-container{
+    display: flex;
+    width: 428px;
+    height: 250px;
+    border: 1px solid rgb(230, 217, 217);
+    border-radius: 10px;
+    align-items: center;
+}
+.img-details-btn img{
+    width: 170px;
+    height: auto;
+    padding-left: 8px;
+}
+.img-details-btn button{
+    width: 120px;
+    height: 60px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 10px;
+    
+}
+
+.feature-writing-part{
+    padding:12px 10px;
+    width: 100%;
+    
+}
+
+.icon-dollar-salary{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}

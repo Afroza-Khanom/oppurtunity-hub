@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 import './Home.css'
 import JobCategory from '../JobCategory/JobCategory';
+import FeatureJob from '../FeaturedJobs/FeatureJob';
+
 
 
 const Home = () => {
     const jobCategories = useLoaderData();
-    console.log(jobCategories)
-
-    const featuredJobs = useLoaderData();
-    console.log(featuredJobs)
-
+    console.log(jobCategories.jobCategory
+        );
+    
     return (
         <div>
             <header className='header-container'>
@@ -33,7 +33,7 @@ const Home = () => {
                 <p>Explore thousands of opportunities with all the information you need.</p>
                 <div className='jobCategory-container'>
                     {
-                        jobCategories.map(jobcategory => <JobCategory
+                        jobCategories.jobCategory.map(jobcategory => <JobCategory
                         key={jobcategory.id} jobcategory={jobcategory}
                         ></JobCategory>)
                     }
@@ -44,10 +44,12 @@ const Home = () => {
             <section style={{paddingTop: '20px'}}>
             <h1 style={{fontSize:'38px'}}>Featured Jobs</h1>
                 <p>Explore thousands of opportunities with all the information you need.</p>
-                <div>
+                <div className='full-featured-container'>
+                <div className='featuredJob-container'>
                     {
-
+                        jobCategories.jobDetail.map(featuredjob => <FeatureJob key={featuredjob._id} featuredjob={featuredjob}></FeatureJob>)
                     }
+                </div>
                 </div>
             </section>
             

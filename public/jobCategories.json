@@ -1,4 +1,5 @@
-[
+{
+  "jobCategory": [
     {
       "id": 1,
       "imageURL": "https://images.unsplash.com/photo-1580835920765-c35ee0985bbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5naW5lZXIlMjBqb2IlMjBwbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60",
@@ -22,5 +23,140 @@
       "imageURL": "https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bnVyc2UlMjBwbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60",
       "name": "Nurse",
       "jobNumber": 98765
-    }
+    } ],
+
+     "jobDetail": [
+      {
+        "_id": 1,
+        "company_logo": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png",
+        "company_name":"Google LLC",
+        "location": "New York, NY",
+        "job_title": "Software Developer",
+        "remote": true,
+        "job_description": "We are looking for a skilled Software Developer to join our team...",
+        "job_requirement": "3+ years of experience in software development...",
+        "educational_requirement": "Bachelor's degree in Computer Science or related field...",
+        "contact_info": "John Doe",
+        "phone": "123-456-7890",
+        "email": "johndoe@example.com",
+        "experience": "3+ years of experience in software development",
+        "Salary": 98765
+      },
+      {
+        "_id": 2,
+        "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS6fHGLj94g6EV9dtZqIkMEtiuf9Qg7bwJqmIqHj9ZKdXaT6g&s",
+        "company_name":"NETFLIX CA",
+        "location": "San Francisco, CA",
+        "job_title": "Data Analyst",
+        "remote": false,
+        "job_description": "We are seeking a Data Analyst to analyze and interpret data for our company...",
+        "job_requirement": "2+ years of experience in data analysis...",
+        "educational_requirement": "Bachelor's degree in Statistics, Mathematics or related field...",
+        "contact_info": "Jane Smith",
+        "phone": "987-654-3210",
+        "email": "janesmith@example.com",
+        "experience": "2+ years of experience in data analysis",
+        "Salary": 54321
+      },
+      {
+        "_id": 3,
+        "company_logo": "https://www.freepnglogos.com/uploads/logo-tokopedia-png/tokopedia-apa-itu-startup-pengertian-cara-memulai-dan-1.png",
+        "company_name":"tokopedia",
+        "location": "Seattle, WA",
+        "job_title": "Product Designer",
+        "remote": true,
+        "job_description": "We are looking for a talented Product Designer to create innovative designs...",
+        "job_requirement": "4+ years of experience in product design...",
+        "educational_requirement": "Bachelor's degree in Design or related field...",
+        "contact_info": "Michael Brown",
+        "phone": "555-123-4567",
+        "email": "michaelbrown@example.com",
+        "experience": "4+ years of experience in product design",
+        "Salary": 12345
+      },
+      {
+        "_id": 4,
+        "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsvFPkQFaZsz5DgDEQgGfnJFFg1Uh0RRR_loaJ_anT04fbNVcM&s",
+        "company_name":"TESLA",
+        "location": "Los Angeles, CA",
+        "job_title": "Marketing Coordinator",
+        "remote": false,
+        "job_description": "We are seeking a Marketing Coordinator to assist with marketing campaigns...",
+        "job_requirement": "1+ years of experience in marketing or related field...",
+        "educational_requirement": "Bachelor's degree in Marketing or related field...",
+        "contact_info": "Sarah Johnson",
+        "phone": "111-222-3333",
+        "email": "sarahjohnson@example.com",
+        "experience": "1+ years of experience in marketing or related field",
+        "Salary": 12345
+      },
+      {
+        "_id": 5,
+        "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBk3gyVvjKqAxkbKH7XcblljXRjlxXdX1skPVQjr04Tf6YvPs&s",
+        "company_name":"YouTube",
+        "location": "Chicago, IL",
+        "job_title": "Frontend Developer",
+        "remote": true,
+        "job_description": "We are looking for a talented Frontend Developer to build user-friendly interfaces...",
+        "job_requirement": "3+ years of experience in frontend development...",
+        "educational_requirement": "Bachelor's degree in Computer Science or related field...",
+        "contact_info": "David Brown",
+        "phone": "444-555-6666",
+        "email": "davidbrown@example.com",
+        "experience": "1+ years of experience in marketing or related field",
+        "Salary": 12000
+      },
+      {
+          "_id": 6,
+          "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvNiFIATzWKW-8AdiVxPB4yU7-5N3yOp0N3FpNgoRsDDHJ1Ql&s",
+          "company_name":"Toyoto",
+          "location": "Austin, TX",
+          "job_title": "Full Stack Developer",
+          "remote": true,
+          "job_description": "We are seeking a Full Stack Developer to develop web applications...",
+          "job_requirement": "5+ years of experience in full stack development...",
+          "educational_requirement": "Bachelor's degree in Computer Science or related field...",
+          "contact_info": "Alex Johnson",
+          "phone": "777-888-9999",
+          "email": "alexjohnson@example.com",
+          "experience": "5+ years of experience in full stack development",
+          "Salary": 20000
+        },
+        {
+          "_id": 7,
+          "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRePvz0_IjlydEB1DhzEWAO4Q_kQSjAZ7AG6TlTwyqIYtsp-H7Z&s",
+          "company_name":"gopay",
+          "location": "London, UK",
+          "job_title": "Data Scientist",
+          "remote": false,
+          "job_description": "We are looking for a Data Scientist to analyze large datasets and develop models...",
+          "job_requirement": "3+ years of experience in data science...",
+          "educational_requirement": "Master's degree in Statistics, Computer Science or related field...",
+          "contact_info": "Sophia Williams",
+          "phone": "+44 20 1234 5678",
+          "email": "sophiawilliams@example.com",
+          "experience": "3+ years of experience in data science",
+          "Salary": 35000
+        },
+        {
+          "_id": 8,
+          "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqjA0HvCPOtjqELYRznGj4BHAfmAtwJn5tw8AVnuzQLyzC6Gw2&s",
+          "company_name":"gopay",
+          "location": "Toronto, Canada",
+          "job_title": "UX/UI Designer",
+          "remote": true,
+          "job_description": "We are seeking a talented UX/UI Designer to create intuitive user experiences...",
+          "job_requirement": "4+ years of experience in UX/UI design...",
+          "educational_requirement": "Bachelor's degree in Design or related field...",
+          "contact_info": "Emily Jones",
+          "phone": "+1 416-555-6789",
+          "email": "emilyjones@example.com",
+          "experience": "4+ years of experience in UX/UI design",
+          "Salary": 12500
+        }
   ]
+
+}
+    
+
+  

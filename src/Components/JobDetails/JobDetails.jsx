@@ -1,18 +1,19 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import './JobDetails.css'
 import JobDetail from '../JobDetail/JobDetail';
 
-const JobDetails = (id) => {
-    const jobdetails = useLoaderData();
+const JobDetails = ({featuredjob, handleViewDetails}) => {
+    // const jobdetails = useLoaderData();
     // console.log(jobdetails)
-    console.log(id)
+    // const {_id, company_logo,company_name, location,job_title, remote, Salary } = featuredjob;
+    console.log(featuredjob, handleViewDetails)
     
     return (
         <div>
-            <header className='headertag-container'>
-                <h1>Job Details</h1>
-            </header>
+            <Link to='jobdetails'>
+                <button onClick={()=>handleViewDetails(_id)} >View Details</button>
+                </Link>
             <div>
                 {
                     // jobdetails.map(jobdetail => <JobDetail key={jobdetails.id} jobdetail={jobdetail}></JobDetail>)

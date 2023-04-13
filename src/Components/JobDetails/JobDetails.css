@@ -10,3 +10,9 @@
 .headertag-container h1{
     padding-top: 100px;
 }
+
+@media screen and (max-width: 600px) {
+    .headertag-container{
+        width: 500px;
+    }
+}

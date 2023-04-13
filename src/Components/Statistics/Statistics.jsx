@@ -49,6 +49,10 @@ const Statistics = () => {
 
     return (
         <div>
+            <header className='headertag-container'>
+                <h1>Statistics</h1>
+            </header>
+            
              <div style={{
             paddingBottom: '56.25%', /* 16:9 */
             position: 'relative',
@@ -64,7 +68,7 @@ const Statistics = () => {
                     <ResponsiveContainer >
                 <AreaChart
                     width={1000}
-                    height={300}
+                    height={400}
                     data={marksArray}
                 >
                     {/* <Area dataKey="marks"></Area> */}

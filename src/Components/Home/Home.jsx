@@ -9,8 +9,8 @@ import FeatureJob from '../FeaturedJobs/FeatureJob';
 
 const Home = () => {
     const jobCategories = useLoaderData();
-    console.log(jobCategories.jobCategory
-        );
+    // console.log(jobCategories.jobCategory);
+    const [showAll, setShowAll] = useState(false);
     
     return (
         <div>
@@ -23,7 +23,7 @@ const Home = () => {
                     <button>Get Started</button>
                 </div>
                 <div>
-                    <img className='img-fluid' src="/public/image/a49e18a6c059795a878b6b0366e7211b.png" alt="" />
+                    <img className='img-fluid' src="/image/a49e18a6c059795a878b6b0366e7211b.png" alt="" />
                 </div>
             </header>
 
@@ -46,13 +46,21 @@ const Home = () => {
                 <p>Explore thousands of opportunities with all the information you need.</p>
                 <div className='full-featured-container'>
                 <div className='featuredJob-container'>
-                    {
-                        jobCategories.jobDetail.map(featuredjob => <FeatureJob key={featuredjob._id} featuredjob={featuredjob}></FeatureJob>)
-                    }
+                        {
+                            showAll ?
+                                jobCategories.jobDetail.map(featuredjob => <FeatureJob key={featuredjob._id} featuredjob={featuredjob}></FeatureJob>)
+                                :  
+                                jobCategories.jobDetail.slice(0,4).map(featuredjob => <FeatureJob key={featuredjob._id} featuredjob={featuredjob}></FeatureJob>)
+                            
+                        }
+                    <div>
+                    <button style={{position:'absolute' , msTransform: 'transLateY(-50%)', transform:'translateY(-50%)'}} onClick={()=>setShowAll(true)} className='showMore-btn'>Show All</button>
+                    </div>
                 </div>
+                
                 </div>
             </section>
-            {/* <button className='showMore-btn'>Show More</button> */}
+            {/* <button onClick={()=>setShowAll(true)} className='showMore-btn'>Show All</button> */}
             
         </div>
     );

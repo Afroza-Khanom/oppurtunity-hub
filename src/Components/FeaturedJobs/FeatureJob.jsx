@@ -3,13 +3,18 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import './FeatureJob.css'
+import JobDetails from '../JobDetails/JobDetails';
 
 
 const FeatureJob = ({featuredjob}) => {
     const {_id, company_logo,company_name, location,job_title, remote, Salary } = featuredjob;
     console.log(featuredjob)
 
-    
+    const [newJobShow, setnewJobShow] = useState([]);
+
+    const handleViewDetails = id =>{
+        
+    }
 
     return (
         <div>
@@ -17,7 +22,8 @@ const FeatureJob = ({featuredjob}) => {
                 <div className='img-details-btn'>
                     <img src={company_logo} alt="" />
                     {/* <JobDetailContext.Provider> */}
-                    <Link to='jobdetails'><button onClick={()=>handleViewDetails(_id)} >View Details</button></Link>
+                    <JobDetails featuredjob={featuredjob} handleViewDetails={handleViewDetails}>
+                    </JobDetails>
                     
                     {/* </JobDetailContext.Provider> */}
                     

@@ -3,18 +3,19 @@ import { useLoaderData } from 'react-router-dom';
 import './JobDetails.css'
 import JobDetail from '../JobDetail/JobDetail';
 
-const JobDetails = () => {
+const JobDetails = (id) => {
     const jobdetails = useLoaderData();
     // console.log(jobdetails)
+    console.log(id)
     
     return (
         <div>
-            <header>
+            <header className='headertag-container'>
                 <h1>Job Details</h1>
             </header>
             <div>
                 {
-                    jobdetails.map(jobdetail => <JobDetail key={jobdetails._id} jobdetail={jobdetail}></JobDetail>)
+                    // jobdetails.map(jobdetail => <JobDetail key={jobdetails.id} jobdetail={jobdetail}></JobDetail>)
                 }
             </div>
 

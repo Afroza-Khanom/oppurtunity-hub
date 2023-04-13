@@ -3,45 +3,23 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import './FeatureJob.css'
-import JobDetail from '../JobDetail/JobDetail';
 
-// export const JobDetailContext = createContext([]);
 
 const FeatureJob = ({featuredjob}) => {
     const {_id, company_logo,company_name, location,job_title, remote, Salary } = featuredjob;
-    
-    const [JobInfo, setJobInfo] = useState([]);
+    console.log(featuredjob)
 
-    // useEffect(()=>{
-        
-    //     }
-    // },[featuredjob])
-
-    const handleViewDetails = (jobinfo) =>{
-        console.log(jobinfo)
-        // const storedjob =[];
-        const clikedJob = [];
-
-        for(const id in featuredjob){
-            const findJob = featuredjob.find(fj => fj._id === id)
-            if(findJob){
-                // const quantity = storedjob[id];
-                clikedJob.push(findJob);
-            }
-            setJobInfo(clikedJob);
-    
-    }
-}
     
 
     return (
         <div>
-            <div className='featureJob-container'>
+            <div className='featuresJob-container'>
                 <div className='img-details-btn'>
                     <img src={company_logo} alt="" />
-                    <JobDetailContext.Provider>
+                    {/* <JobDetailContext.Provider> */}
                     <Link to='jobdetails'><button onClick={()=>handleViewDetails(_id)} >View Details</button></Link>
-                    </JobDetailContext.Provider>
+                    
+                    {/* </JobDetailContext.Provider> */}
                     
                 </div>
                 <div className='feature-writing-part'>

@@ -9,13 +9,8 @@ import FeatureJob from '../FeaturedJobs/FeatureJob';
 
 const Home = () => {
     const jobCategories = useLoaderData();
-    // console.log(jobCategories.jobCategory);
-
-    const featuredjob = jobCategories.jobDetail;
-    // console.log(featuredjob);
-
-    const [showMore, setShowMore] = useState(false);
-
+    console.log(jobCategories.jobCategory
+        );
     
     return (
         <div>
@@ -54,15 +49,10 @@ const Home = () => {
                     {
                         jobCategories.jobDetail.map(featuredjob => <FeatureJob key={featuredjob._id} featuredjob={featuredjob}></FeatureJob>)
                     }
-                    {/* {
-                        showMore ? featuredjob : featuredjob.slice(0,3)
-                    }
-                    <button onClick={() => setShowMore
-                    (!showMore)} className='showMore-btn'>Show More</button> */}
                 </div>
                 </div>
             </section>
-            
+            {/* <button className='showMore-btn'>Show More</button> */}
             
         </div>
     );

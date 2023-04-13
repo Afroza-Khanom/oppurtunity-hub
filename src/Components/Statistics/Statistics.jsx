@@ -1,5 +1,5 @@
 import React from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from "recharts";
 
 
 const Statistics = () => {
@@ -49,18 +49,36 @@ const Statistics = () => {
 
     return (
         <div>
-            <AreaChart
-                width={1000}
-                height={300}
-                data={marksArray}
-            >
-                {/* <Area dataKey="marks"></Area> */}
-                <Area stroke='#8884d8' dataKey="marks"></Area>
-                <XAxis dataKey="name" />
-                <YAxis></YAxis>
-                <Tooltip/>
-            </AreaChart>
+             <div style={{
+            paddingBottom: '56.25%', /* 16:9 */
+            position: 'relative',
+            height: 0
+          }} >
+            <div style={{
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%'
+                }}>
+                    <ResponsiveContainer >
+                <AreaChart
+                    width={1000}
+                    height={300}
+                    data={marksArray}
+                >
+                    {/* <Area dataKey="marks"></Area> */}
+                    <Area stroke='#8884d8' dataKey="marks"></Area>
+                    <XAxis dataKey="name" />
+                    <YAxis></YAxis>
+                    <Tooltip/>
+                </AreaChart>
+                </ResponsiveContainer>
+            </div>
+          </div>
         </div>
+       
+        
     );
 };
 

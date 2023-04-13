@@ -19,3 +19,22 @@ nav a{
     border-radius: 8px;
     font-weight: 600;
 }
+
+@media screen and (max-width: 600px) {
+    .navbar-container{
+        width: 500px;
+    }
+    .navbar-container h1{
+        font-size: 10px;
+    }
+    nav a{
+        text-decoration: none;
+        padding-right: 8px;
+        font-size: 12px;
+    }
+    .btn-apply{
+        width: 120px;
+        height: 60px;
+        text-align: center;
+    }
+}

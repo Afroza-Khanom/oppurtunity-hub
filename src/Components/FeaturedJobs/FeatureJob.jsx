@@ -1,25 +1,24 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocation, faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import './FeatureJob.css'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Col, Row } from 'react-bootstrap';
 
 
 
 const FeatureJob = ({featuredjob}) => {
     const {_id, company_logo,company_name, location,job_title, remote, Salary} = featuredjob;
-    console.log(featuredjob)
-
-    const [newJobShow, setnewJobShow] = useState([]);
-
+    console.log(featuredjob);
 
     return (
         <div>
             <div className='featuresJob-container'>
                 <div className='img-details-btn'>
-                    <img src={company_logo} alt="" />
-                    {/* <JobDetails featuredjob={featuredjob} >
-                    </JobDetails> */}
+                    <img src={company_logo} alt="" /><br />
+                    <Link to={`/jobdetails/${_id}`} className='showMore-btn'>View Details</Link>
                 
                     
                 </div>
@@ -34,15 +33,22 @@ const FeatureJob = ({featuredjob}) => {
                         
                     </div>
                     <div className='icon-dollar-salary'>
-                        <FontAwesomeIcon icon={faLocation} /><p>{location}</p>
+                        <FontAwesomeIcon icon={faLocationDot} /><p>{location}</p>
                         <FontAwesomeIcon icon={faDollarSign} /><p>{Salary}</p>
                     </div>
-                    <Link to={`/jobdetails/${_id}`} className='showMore-btn'>View Details</Link>
+                    
                 </div>
                 
             </div>
             
         </div>
+
+        
+    
+
+
+
+
     );
 };
 

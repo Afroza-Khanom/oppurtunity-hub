@@ -76,8 +76,8 @@
       },
       {
         "_id": 4,
-        "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsvFPkQFaZsz5DgDEQgGfnJFFg1Uh0RRR_loaJ_anT04fbNVcM&s",
-        "company_name":"TESLA",
+        "company_logo": "https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-digital-economy-forum-mdcc-1.png",
+        "company_name":"Shopee",
         "location": "Los Angeles, CA",
         "job_title": "Marketing Coordinator",
         "remote": false,
@@ -92,7 +92,7 @@
       },
       {
         "_id": 5,
-        "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBk3gyVvjKqAxkbKH7XcblljXRjlxXdX1skPVQjr04Tf6YvPs&s",
+        "company_logo": "https://www.freepnglogos.com/uploads/youtube-logo-png-transparent-background-download-3.png",
         "company_name":"YouTube",
         "location": "Chicago, IL",
         "job_title": "Frontend Developer",

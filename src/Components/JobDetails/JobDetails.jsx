@@ -11,7 +11,13 @@ const JobDetails = () => {
     const {_id, job_description, job_requirement, educational_requirement,location,phone,email, experience,Salary,job_title ,company_name,remote} = data;
 //storing in local storage
     const handleApply = () =>{
-
+        const storedData = JSON.parse(localStorage.getItem('apply'));
+        if(storedData){
+            localStorage.setItem('apply',JSON.stringify([...storedData,data]))
+        }
+        else{
+            localStorage.setItem('apply',JSON.stringify([data]))
+        }
     }
     
     

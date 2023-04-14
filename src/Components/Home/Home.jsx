@@ -54,7 +54,10 @@ const Home = () => {
                             
                         }
                     <div>
-                    <button style={{position:'absolute' , msTransform: 'transLateY(-50%)', transform:'translateY(-50%)'}} onClick={()=>setShowAll(true)} className='showMore-btn'>Show All</button>
+                    {
+                        !showAll && 
+                        <button style={{position:'absolute' , msTransform: 'transLateY(-50%)', transform:'translateY(-50%)'}} onClick={()=>setShowAll(true)} className='showMore-btn'>Show All</button>
+                    }
                     </div>
                 </div>
                 

@@ -15,6 +15,7 @@ import Blog from './Components/Blog/Blog';
 import JobDetails from './Components/JobDetails/JobDetails';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NotFound from './Components/NotFound/NotFound';
 
 
 const router = createBrowserRouter([
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '*',
+        element:<NotFound></NotFound>
       }
     ]
   }

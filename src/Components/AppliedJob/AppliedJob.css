@@ -1,3 +1,9 @@
+.filter-field{
+    border: 1px solid violet;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
 .apply-job-container{
     width: 500px;
 }
